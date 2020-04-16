@@ -36,7 +36,7 @@ class Database {
       id,
       ...heroi
     }
-    
+    console.log('heroiComId', heroiComId)
     const dadosFinal = [
       ...dados,
       heroiComId

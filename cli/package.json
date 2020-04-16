@@ -2,7 +2,9 @@
   "name": "cli",
   "version": "1.0.0",
   "main": "test.js",
-  "dependencies": {},
+  "dependencies": {
+    "commander": "^5.0.0"
+  },
   "devDependencies": {
     "mocha": "^7.1.1"
   },
