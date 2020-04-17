@@ -1,5 +1,5 @@
 # Node.js By #NodeBR!
- - Ministrado por [Wrick Wendel](https://github.com/ErickWendel)
+ - Ministrado por [@Erick Wendel](https://github.com/ErickWendel)
 
 ## Conteúdo <a name = "content"></a>
 #### Módulos
@@ -28,7 +28,7 @@
 - [ ] 5. Bancos de Dados - Nosso projeto Multi-banco de dados
 5.0 Criando projetos multi-banco de dados  ✅
 5.1 Trabalhando comm o padrão Strategy para multi DataSources ✅
-5.2 Design Patterns - Strategy
+5.2 Design Patterns - Strategy ✅
 5.3 Demonstração multi datasources com strategy design pattern
 ---
 - [ ] 6. Introdução ao Postgres e Bancos Relacionais
