@@ -29,7 +29,7 @@
 5.0 Criando projetos multi-banco de dados  ✅
 5.1 Trabalhando comm o padrão Strategy para multi DataSources ✅
 5.2 Design Patterns - Strategy ✅
-5.3 Demonstração multi datasources com strategy design pattern
+5.3 Demonstração multi datasources com strategy design pattern ✅
 ---
 - [ ] 6. Introdução ao Postgres e Bancos Relacionais
 - [ ] 7. Introdução ao MongoDB e Bancos Não-Relacionais (NoSQL)

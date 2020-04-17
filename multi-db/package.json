@@ -1,0 +1,12 @@
+{
+  "name": "multi-db",
+  "version": "1.0.0",
+  "description": "docker run -p 5432:5432 --name postgres -e POSTGRES_USER=raufa -e POSTGRES_PASSWORD=yourPassword -e POSTGRES_DB=heroes -d postgres \r - foi preciso ativar pelo dashboard da interface..\r docker ps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
