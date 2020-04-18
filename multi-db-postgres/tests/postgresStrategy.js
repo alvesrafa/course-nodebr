@@ -16,6 +16,7 @@ const MOCK_HEROI_ATUALIZAR = {
 describe('Postgres Sttrategy tests',() => {
   before(async () => {
     await context.connect()
+    await context.delete()
     await context.create(MOCK_HEROI_ATUALIZAR)
   })
   it('PostgresSQL Connection', async () => {
@@ -46,7 +47,12 @@ describe('Postgres Sttrategy tests',() => {
     assert.deepEqual(itemAtualizado.nome, novoItem.nome)
   })
 
-  // it('PostgresSQL DELETE', async () => {})
+  it('PostgresSQL DELETE', async () => {
+    const [item] = await context.read({}) // vem o primeiro da base
+    const result = await context.delete(item.id)
+
+    assert.deepEqual(result, 1)
+  })
 
   
 })
