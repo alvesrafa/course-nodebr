@@ -32,11 +32,11 @@
 5.3 Demonstração multi datasources com strategy design pattern ✅
 ---
 - [ ] 6. Introdução ao Postgres e Bancos Relacionais
-6.0 Introdução ao Postgres e Bancos Realcionais
-6.1 Postgres - Operadores e conexão
-6.2 Conhecendo o Sequelize
-6.3 Cadastrando - CREATE
-6.4 Listando - READ
+6.0 Introdução ao Postgres e Bancos Realcionais ✅
+6.1 Postgres - Operadores e conexão ✅
+6.2 Conhecendo o Sequelize ✅
+6.3 Cadastrando - CREATE ✅
+6.4 Listando - READ ✅
 6.5 Atualizando - UPDATE
 6.6 Removendo DELETE
 
