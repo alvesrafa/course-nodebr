@@ -18,5 +18,5 @@ docker run --name mongoclient -p 3000:3000 --link mongodb:mongodb -d mongoclient
 -cria o srvicço pra visualizar o mongodb
 
 docker exec -it mongodb \
-  mongo --host localhost -u admin -p admin --authenticationDatabase admin \
+  mongo --host localhost -u admin -p senhadmin --authenticationDatabase admin \
   --eval "db.getSiblingDB('herois').createUser({user: 'raufa', pwd: 'raufa', roles: [{role: 'readWrite', db: 'herois'}]})"
