@@ -7,7 +7,6 @@
 - [x] 1. Sincronia de funções Javascript ✅
 ---
 - [x] 2. Manipulação de listas ✅<br>
-
 2.0 Introdução ✅<br>
 2.1 Manipulando listas com For/ForIn/ForOf ✅<br>
 2.2 Criando nosso próprio Array Map ✅<br>
@@ -15,12 +14,10 @@
 2.4 Criando nosso próprio Array Reduce ✅<br>
 ---
 - [x] 3. Introdução a desenvolvimento de testes automatizados <br>
-
 3.0 Introdução ✅<br>
 3.1 Ambiente e configuração do ciclo de testes ✅<br>
 ---
 - [x] 4. Node.js além da Web - Criando ferramentas de linha de comando <br>
-
 4.0 Introdução ✅<br>
 4.1 Manipulando arquivos - READ ✅<br>
 4.2 Manipulando arquivos - CREATE ✅<br>
@@ -30,7 +27,6 @@
 4.6 Criando ferramentas de linha de comando
 ---
 - [x] 5. Bancos de Dados - Nosso projeto Multi-banco de dados<br>
-
 5.0 Criando projetos multi-banco de dados  ✅<br>
 5.1 Trabalhando comm o padrão Strategy para multi DataSources ✅<br>
 5.2 Design Patterns - Strategy ✅<br>
