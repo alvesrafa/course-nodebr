@@ -1,5 +1,6 @@
 const ICrud = require('./interfaces/interfaceCrud')
 const Mongoose = require('mongoose');
+
 const STATUS = {
   0: 'Disconectado',
   1: 'Conectado',
@@ -24,21 +25,23 @@ class MongoDB extends ICrud {
 
   }
   connect(){
-    Mongoose.connect('mongodb://admin:admin@localhost:27017/admin', {
+    Mongoose.connect('mongodb://raufa:raufa@localhost:27017/herois', {
       useNewUrlParser: true,
       useUnifiedTopology: true 
     }, (error) => {
       if(!error) return ;
       console.log('Falha na conexão', error)
     });
-
-    this._driver = Mongoose.connection;
-    this._driver.once('open', () => console.log('Database rodando!'))
-
+    const connection = Mongoose.connection;
+    this._driver = connection;
+    connection.once('open', () => console.log('Database rodando!'))
+   
+     
+    this.defineModel()
     
   }
   defineModel() {
-    heroisSchema = new Mongoose.Schema({
+    const heroisSchema = new Mongoose.Schema({
       nome: {
         type: String,
         required: true,
@@ -53,10 +56,10 @@ class MongoDB extends ICrud {
       }
     
     })
-    this._herois = Mongoose.model('herois', heroisSchema)
+    this._herois = Mongoose.models.herois || Mongoose.model('herois', heroisSchema)
   }
   async create(item) {
-    return await model.create(item)
+    return await this._herois.create(item)
   }
 }
 module.exports = MongoDB
