@@ -51,7 +51,7 @@
 7.5 Atualizando - UPDATE<br>
 7.6 Removendo DELETE<br>
 ---
-- [ ] 8. Refatorando nosso projeto para bancos de dados multi-schemas
+- [x] 8. Refatorando nosso projeto para bancos de dados multi-schemas
 ---
 - [ ] 9. Node.js e Web Services - Criando serviços profissionais com Hapi.js
 ---
