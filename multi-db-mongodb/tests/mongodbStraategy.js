@@ -17,10 +17,13 @@ const MOCK_HEROI_ATUALIZAR = {
   nome: 'Batman', 
   poder: 'DinDin'
 }
+let MOCK_HEROI_ID = ''
 describe('MongoDB Sttrategy tests',() => {
   before(async () => {
     await context.connect()
     await context.create(MOCK_HEROI_DEFAULT)
+    const result = await context.create(MOCK_HEROI_ATUALIZAR)
+    MOCK_HEROI_ID = result._id
   })
   it('MongoDB Connection', async () => {
     const result = await context.isConnected()
@@ -31,7 +34,7 @@ describe('MongoDB Sttrategy tests',() => {
     const {nome, poder} = await context.create(MOCK_HEROI_CADASTRAR)
     assert.deepEqual({nome, poder}, MOCK_HEROI_CADASTRAR)
   })
-  it('PostgresSQL READ', async () => {
+  it('MongoDB READ', async () => {
    const RESULT = await context.read({nome: MOCK_HEROI_DEFAULT.nome})
    console.log(RESULT)
    const [{nome, poder}] = await context.read({nome: MOCK_HEROI_DEFAULT.nome})
@@ -42,12 +45,17 @@ describe('MongoDB Sttrategy tests',() => {
    }
    assert.deepEqual(result, MOCK_HEROI_DEFAULT)
   })
-  // it('PostgresSQL UPDATE', async () => {
-    
-  // })
-  // it('PostgresSQL DELETE', async () => {
-   
-  // })
+  it('MongoDB UPDATE', async () => {
+    const result = await context.update(MOCK_HEROI_ID, {
+      nome: 'Perna-Longa'
+    })
+    assert.deepEqual(result.nModified, 1)
+  })
+  it('MongoDB DELETE', async () => {
+    const result = await context.delete(MOCK_HEROI_ID)
+
+    assert.deepEqual(result.n, 1)
+  })
 
   
 })
