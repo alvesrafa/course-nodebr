@@ -42,7 +42,7 @@
 6.6 Removendo DELETE ✅<br>
 
 ---
-- [ ] 7. Introdução ao MongoDB e Bancos Não-Relacionais (NoSQL)<br>
+- [x] 7. Introdução ao MongoDB e Bancos Não-Relacionais (NoSQL)<br>
 7.0 Introdução ao MongoDB e Bancos Não-Realcionais <br>
 7.1 Operadores e conexão<br>
 7.2 Conhecendo o Mongoose<br>
@@ -65,6 +65,6 @@
 ---
 <b>
 
-<h1>36% COMPLETE </h1>
+<h1>53% COMPLETE </h1>
 
 </b>
