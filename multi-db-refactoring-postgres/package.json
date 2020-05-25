@@ -1,0 +1,19 @@
+{
+  "name": "multi-db",
+  "version": "1.0.0",
+  "description": "Cursos multidb",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.9.9",
+    "sequelize": "^5.21.10"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  }
+}
