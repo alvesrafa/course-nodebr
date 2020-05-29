@@ -35,14 +35,14 @@ class Postgres extends ICrud {
     return model
   }
   static async connect() {
-    const connection = new Sequelize("heroes", "postgres", "", {
+    const connection = new Sequelize("heroes", "postgres", "root", {
       host: "localhost",
       dialect: "postgres",
       quoteIdentifiers: false,
       operatorsAliases: false,
       logging: false
     });
-    await this.defineModel();
+    //await this.defineModel();
     return connection
   }
 }

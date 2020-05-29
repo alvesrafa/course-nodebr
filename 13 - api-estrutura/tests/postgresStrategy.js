@@ -23,6 +23,7 @@ describe('Postgres Sttrategy tests', function(){
     context = new Context(new Postgres(connection, model))
     await context.delete()
     await context.create(MOCK_HEROI_ATUALIZAR)
+    console.log('passou?')
   })
   it('PostgresSQL Connection', async () => {
     const result = await context.isConnected()
